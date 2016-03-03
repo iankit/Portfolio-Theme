@@ -1,0 +1,78 @@
+h3{
+	text-transform: uppercase;
+	text-align:center;
+	color: $accent-light;
+	font-size:14px;
+	padding: 100px 0 30px;
+}
+.face-section{
+	max-width: 780px;
+	display: flex;
+	margin: 0 auto;
+	align-items: center;
+	justify-content: space-around;
+}
+.face-img{
+	background: url(../img/my.png) center center;
+	background-size: cover;
+	height: 200px;
+	width: 200px;
+	order: 3;
+	border-radius: 50%;
+}
+.bg{
+	background-color: rgba(0,0,0,0.1);
+}
+[class^="icon-"]{
+	height: 50px;
+	width: 50px;
+	background: rgba(0,0,0,0.1);
+	border-radius: 50%;
+	padding: 30px;
+}
+[class^="icon-"] path{
+	fill: $accent;
+}
+[class^="icon-"] polygon{
+	fill: $accent;
+}
+.icon-movies{
+	order: 0;
+}
+.icon-books{
+	order: 2;
+}
+
+.icon-mouse{
+	order: 4;
+}
+.icon-sports{
+	order: 5;
+}
+.about-text{
+	max-width: 620px;
+	padding: 0 15px;
+	margin: 50px auto;
+	line-height: 1.75em;
+	font-size: 18px;
+}
+@media screen and (max-width: 650px){
+	.face-section{
+		display: block;
+		text-align: center;
+	}
+	.face-section div{
+			display: inline-block;
+		}
+	div.face-img{
+		display: block;
+		background-position: center center;
+		background-repeat: no-repeat;
+		margin: 0 auto;
+		margin-bottom: 30px;
+	}
+	[class^="icon-"]{
+		margin: 10px;
+	}
+}
+
