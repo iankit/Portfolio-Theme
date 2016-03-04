@@ -544,6 +544,9 @@ header h1 span {
   text-transform: uppercase;
   text-align: center; }
 
+body {
+  font-family: Open Sans, sans-serif; }
+
 h3 {
   text-transform: uppercase;
   text-align: center;
@@ -618,6 +621,44 @@ h3 {
 
   [class^="icon-"] {
     margin: 10px; } }
+.skill-section {
+  max-width: 540px;
+  margin: 100px auto; }
+
+.skill-unit {
+  width: 270px;
+  float: left; }
+
+.skill-length {
+  font-size: 0px;
+  margin-bottom: 30px; }
+
+.skill-text {
+  margin-bottom: 8px; }
+
+.skill-length span {
+  background-color: #c99065;
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  margin-right: 5px;
+  border-radius: 50%; }
+
+.skill-length span:before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 2px; }
+
+.skill-1 span:nth-child(n+2), .skill-2 span:nth-child(n+3), .skill-3 span:nth-child(n+4), .skill-4 span:nth-child(n+5), .skill-5 span:nth-child(n+6), .skill-6 span:nth-child(n+7), .skill-7 span:nth-child(n+8), .skill-8 span:nth-child(n+9), .skill-9 span:nth-child(n+10), .skill-10 span:nth-child(n+11) {
+  background-color: rgba(0, 0, 0, 0.1); }
+
+@media screen and (max-width: 540px) {
+  .skill-section {
+    width: 270px; } }
 footer {
   background: url(../img/main.jpg) center center;
   background-size: cover; }

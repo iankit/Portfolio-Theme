@@ -1,3 +1,6 @@
+body{
+	font-family:Open Sans, sans-serif;
+}
 h3{
 	text-transform: uppercase;
 	text-align:center;
@@ -5,7 +8,7 @@ h3{
 	font-size:14px;
 	padding: 100px 0 30px;
 }
-.face-section{
+.about-section{
 	max-width: 780px;
 	display: flex;
 	margin: 0 auto;
@@ -21,12 +24,12 @@ h3{
 	border-radius: 50%;
 }
 .bg{
-	background-color: rgba(0,0,0,0.1);
+	background-color: $bglight;
 }
 [class^="icon-"]{
 	height: 50px;
 	width: 50px;
-	background: rgba(0,0,0,0.1);
+	background: $bglight;
 	border-radius: 50%;
 	padding: 30px;
 }
@@ -57,11 +60,11 @@ h3{
 	font-size: 18px;
 }
 @media screen and (max-width: 650px){
-	.face-section{
+	.about-section{
 		display: block;
 		text-align: center;
 	}
-	.face-section div{
+	.about-section div{
 			display: inline-block;
 		}
 	div.face-img{
@@ -75,4 +78,48 @@ h3{
 		margin: 10px;
 	}
 }
-
+.skill-section{
+	max-width: 540px;
+	margin: 100px auto;
+}
+.skill-unit{
+	width: 270px;
+	float: left;
+}
+.skill-length{
+	font-size: 0px;
+	margin-bottom: 30px;
+}
+.skill-text{
+	margin-bottom: 8px;
+}
+.skill-length span{
+	background-color: $accent;
+	display: inline-block;
+	width: 14px;
+	height: 14px;
+	margin-right: 5px;
+	border-radius: 50%;
+}
+.skill-length span:before{
+	display: block;
+	content: "";
+	width: 10px;
+	height: 10px;
+	background-color: white;
+	border-radius: 50%;
+	margin: 2px;
+}
+@for $i from 1 through 10{
+.skill-#{$i} span:nth-child(n+#{$i+1}){
+	@extend %skill-color;
+	}
+}
+%skill-color{
+	background-color:$bglight;
+}
+@media screen and(max-width: 540px){
+	.skill-section{
+		width: 270px;
+	}
+}
