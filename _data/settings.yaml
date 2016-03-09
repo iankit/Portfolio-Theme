@@ -4,9 +4,23 @@
 project:
 - {name: Kstart Seed, folder: 'pro-1'}
 - {name: Kstart Seed, folder: 'pro-2'}
-- {name: Kstart Seed, folder: 'pro-3'}
+- {name: Kstart Seed Kstart Seed, folder: 'pro-3'}
 - {name: Kstart Seed, folder: 'pro-4'}
 - {name: Kstart Seed, folder: 'pro-5'}
 - {name: Kstart Seed, folder: 'pro-6'}
 - {name: Kstart Seed, folder: 'pro-7'}
 - {name: Kstart Seed, folder: 'pro-8'}
+
+#--------------------------------------
+
+#--------------------------------------
+#Skill Section 
+skill:
+- {name: Communication, value: '9'}
+- {name: Organisation, value: '7'}
+- {name: Learning, value: '6'}
+- {name: Visual Design, value: '7'}
+- {name: Front-End Design, value: '8'}
+- {name: Wordpress, value: '8'}
+
+#--------------------------------------

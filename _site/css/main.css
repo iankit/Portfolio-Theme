@@ -738,7 +738,10 @@ a:hover {
   opacity: 0.9;
   height: 100%;
   transition: 1s;
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center; }
 
 .thumb-container :hover .thumb-overlay {
   position: absolute;
@@ -748,9 +751,14 @@ a:hover {
   right: 0px; }
 
 .thumb-container :hover .thumb-overlay strong {
-  padding: 20px;
+  padding: 0 20px;
   color: white;
   font-size: 24px;
   text-transform: uppercase;
   display: block;
   font-weight: 300; }
+
+@media screen and (max-width: 750px) {
+  .thumb-unit {
+    width: 50%;
+    padding-top: 26%; } }
