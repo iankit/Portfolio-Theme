@@ -500,12 +500,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat; }
 
-header .logo {
+.logo {
   height: 50px;
   width: 50px;
   float: left;
   margin: 10px 0 0 30px;
-  fill: rgba(0, 0, 0, 0.6); }
+  fill: #c99065; }
 
 nav {
   float: right;
@@ -544,6 +544,15 @@ header h1 span {
   text-transform: uppercase;
   text-align: center; }
 
+.logo {
+  background: url(../img/logo.svg) no-repeat center center;
+  background-size: 50px 50px;
+  padding: 5px; }
+
+.logo-bg {
+  background-color: rgba(0, 0, 0, 0.1);
+  border-radius: 50%; }
+
 body {
   font-family: Open Sans, sans-serif; }
 
@@ -559,7 +568,7 @@ h3 {
   display: flex;
   margin: 0 auto;
   align-items: center;
-  justify-content: space-around; }
+  justify-content: space-between; }
 
 .face-img {
   background: url(../img/my.png) center center;
@@ -694,3 +703,54 @@ footer .content-wrap p {
 
 .clearfix:after {
   clear: both; }
+
+.work-section {
+  background: rgba(0, 0, 0, 0.1); }
+
+a {
+  color: #c99065; }
+
+a:hover {
+  color: #e1c184; }
+
+.thumb-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 100px; }
+
+.thumb-unit {
+  width: 25%;
+  display: block;
+  float: left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  padding-top: 16%;
+  overflow: hidden; }
+
+.thumb-container .thumb-overlay {
+  position: absolute;
+  top: 100%;
+  bottom: null;
+  left: 0px;
+  right: 0px;
+  background: #c99065;
+  opacity: 0.9;
+  height: 100%;
+  transition: 1s;
+  text-align: center; }
+
+.thumb-container :hover .thumb-overlay {
+  position: absolute;
+  top: 0%;
+  bottom: null;
+  left: 0px;
+  right: 0px; }
+
+.thumb-container :hover .thumb-overlay strong {
+  padding: 20px;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  display: block;
+  font-weight: 300; }

@@ -4,12 +4,12 @@ header{
 	background-size: cover;
 	background-repeat: no-repeat;
 }
-header .logo{
+.logo{
 	height: 50px;
 	width: 50px;
 	float: left;
 	margin: 10px 0 0 30px;
-	fill:rgba(0,0,0,0.6);
+	fill:$accent;
 }
 nav{
 	float: right;
@@ -47,4 +47,13 @@ header h1 span{
 	color: white;
 	text-transform: uppercase;
 	text-align: center;
+}
+.logo{
+	background: url(../img/logo.svg) no-repeat center center;
+	background-size: 50px 50px;
+	padding: 5px;
+}
+.logo-bg{
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 50%;
 }

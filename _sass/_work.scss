@@ -1,0 +1,51 @@
+.work-section{
+	background: $bglight;;
+}
+a{
+	color:$accent;
+}
+a:hover{
+	color:$accent-light;
+}
+.thumb-container{
+	max-width:1000px;
+	margin:0 auto;
+	padding-bottom:100px;
+}
+.thumb-unit{
+	width:25%;
+	display:block;
+	float:left;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	padding-top: 16%;
+	overflow: hidden;
+}
+.thumb-container .thumb-overlay{
+	position: absolute;
+	top: 100%;
+	bottom: null;
+	left: 0px;
+	right: 0px;
+	background: $accent;
+	opacity: 0.9;
+	height: 100%;
+	transition: 1s;
+	text-align: center;
+}
+.thumb-container :hover .thumb-overlay{
+	position: absolute;
+	top: 0%;
+	bottom: null;
+	left: 0px;
+	right: 0px;
+}
+.thumb-container :hover .thumb-overlay strong{
+	padding: 20px;
+	color: white;
+	font-size: 24px;
+	text-transform: uppercase;
+	display: block;
+	font-weight: 300;
+}

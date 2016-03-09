@@ -1,0 +1,12 @@
+
+#---------------------------
+#Work Section 
+project:
+- {name: Kstart Seed, folder: 'pro-1'}
+- {name: Kstart Seed, folder: 'pro-2'}
+- {name: Kstart Seed, folder: 'pro-3'}
+- {name: Kstart Seed, folder: 'pro-4'}
+- {name: Kstart Seed, folder: 'pro-5'}
+- {name: Kstart Seed, folder: 'pro-6'}
+- {name: Kstart Seed, folder: 'pro-7'}
+- {name: Kstart Seed, folder: 'pro-8'}
