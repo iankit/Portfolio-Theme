@@ -2,11 +2,10 @@
   <div class="logo logo-bg"></div>
 
   <nav>
-    <a href="">About Me</a>
-    <a href="">Works</a>
-    <a href="">Clients</a>
-    <a href="">Contact Us</a>
+  	{% for nav in site.data.settings.nav %}
+    <a href="{{ nav.link }}">{{ nav.name }}</a>
+    {% endfor %}
   </nav>
-  <h1><span>Portfolio Theme</span></h1>
-  <p class="sub-header">Designer // Learner // Helper </p>
+  <h1><span>{{ site.data.settings.title }}</span></h1>
+  <p class="sub-header">{{ site.data.settings.description }}</p>
 </header>

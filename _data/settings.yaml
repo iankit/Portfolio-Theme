@@ -1,3 +1,15 @@
+title: Portfolio Maker
+description: Thinker // Designer // Learner
+
+#---------------------------
+#Navigation Menu 
+nav:
+- {name: About Me, link: '#'}
+- {name: Works, link: '#'}
+- {name: Clients, link: '#'}
+- {name: Contact Us, link: '#'}
+
+#--------------------------------------
 
 #---------------------------
 #Work Section 

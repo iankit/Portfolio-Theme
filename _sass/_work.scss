@@ -28,33 +28,32 @@ a:hover{
 	bottom: null;
 	left: 0px;
 	right: 0px;
-	background: $accent;
-	opacity: 0.9;
+	background: #444;
+	opacity: 1;
 	height: 100%;
 	transition: 1s;
-	text-align: center;
-	display:flex;
-	justify-content: space-around;
-	align-items: center;
 }
 .thumb-container :hover .thumb-overlay{
-	position: absolute;
-	top: 0%;
-	bottom: null;
-	left: 0px;
-	right: 0px;
+	top: 75%;
 }
-.thumb-container :hover .thumb-overlay strong{
-	padding: 0 20px;
+.thumb-container .thumb-overlay strong{
+	padding-top: 4%;
 	color: white;
-	font-size: 24px;
+	font-size: 14px;
 	text-transform: uppercase;
-	display: block;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
 	font-weight: 300;
+	letter-spacing: 1px;
 }
 @media screen and (max-width: 750px){
 	.thumb-unit{
 	width:50%;
 	padding-top: 26%;
-}
+	}
+	.thumb-container .thumb-overlay strong{
+	padding-top: 2%;
+	font-size: 12px;
+	}
 }

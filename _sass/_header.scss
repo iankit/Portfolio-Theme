@@ -37,6 +37,17 @@ header h1{
 	clear: both;
 	padding-top: 100px;
 }
+@media screen and(max-width:725px){
+	header h1{
+		font-size: 40px;
+	}
+	header nav{
+		float: none;
+		text-align: center;
+		padding-top:90px;
+		margin:0;
+	}
+}
 header h1 span{
 	padding: 0.2em 0.45em;
 	display: inline-block;

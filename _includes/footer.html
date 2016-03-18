@@ -4,10 +4,9 @@
 	  <div class="logo logo-bg"></div>
 	  	<div class="content-wrap">
 			<nav>
-				<a href="">About Me</a>
-				<a href="">Works</a>
-				<a href="">Clients</a>
-				<a href="">Contact Us</a>
+				{% for nav in site.data.settings.nav %}
+    			<a href="{{ nav.link }}">{{ nav.name }}</a>
+    			{% endfor %}
 			</nav>
 			<p class="copyrignt">All content copyright 2016</p>
 		</div>
